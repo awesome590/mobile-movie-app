@@ -1,4 +1,4 @@
-import { View, Text, ImageBackground } from 'react-native'
+import { View, Text, ImageBackground, Image } from 'react-native'
 import React from 'react'
 import { Tabs } from 'expo-router'
 import { images } from '@/constants/images'
@@ -16,9 +16,8 @@ const _layout = () => {
                         <>
                             <ImageBackground source={images.highlight}>
                                 <Image source={icons.home}
-                                tintColor="#151312" className="size-5">
+                                tintColor="#151312" className="size-5" />
                                     <Text>Home</Text>
-                                </Image>
                             </ImageBackground>
                         </>
                     )
